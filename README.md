@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + Tailwind CSS + TypeScript Starter and Boilerplate
+
+A Next.js starter project configured with TypeScript, Tailwind CSS, and a suite of development tools and configurations to ensure a smooth and maintainable development workflow.
+
+## Features
+
+- 🟦 **TypeScript** — for type-safe JavaScript.
+- 🎨 **Tailwind CSS** — for utility-first styling.
+- 🛠️ **ESLint** — to maintain code quality and consistency.
+- ✨ **Prettier** — for consistent code formatting.
+- 🔖 **Commitlint** — to enforce conventional commit messages.
+- 🚫 **lint-staged** — to run linters on git-staged files.
+- 🐶 **Husky** — to manage Git hooks.
+- 📜 **Conventional Commit** — to standardize commit messages.
+- 🧩 **shadcn** — for a component library with styled themes.
+- 🌗 **Next Theme** — to enable light/dark theme toggling.
+- 🔒 **Typesafe env** — for strict environment variable validation.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository
+
+   ```bash
+   git clone https://github.com/SajjanKarn/next-starter-kit
+   ```
+
+### 2. Install Dependencies
+
+   Navigate into the project directory and install dependencies. **pnpm** is recommended to ensure Husky hooks function correctly:
+
+   ```bash
+   cd next-starter-kit
+   yarn
+
+   or
+
+   npm i
+
+   or
+   pnpm install
+   ```
+
+### 3. Run the Development Server
+
+Start the development server with:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Commit Message Guidelines
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project follows the **Conventional Commits** standard to ensure consistent and readable commit history. Each commit message should follow the structure below:
 
-## Learn More
+### Commit Message Format
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **type**: Describes the category of the change. Examples include `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `perf`, `test`, and `build`.
+- **scope** (optional): Clarifies what part of the codebase the change affects, such as `api`, `ui`, `auth`, etc.
+- **subject**: A short, imperative description of the change, explaining what the commit does (e.g., `add login form validation`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Commit Types
 
-## Deploy on Vercel
+| Type       | Description                                                    |
+|------------|----------------------------------------------------------------|
+| `feat`     | Adds a new feature                                             |
+| `fix`      | Fixes a bug                                                    |
+| `chore`    | General maintenance tasks, not affecting source code or tests  |
+| `docs`     | Documentation changes                                          |
+| `style`    | Code style updates (formatting, missing semi-colons, etc.)     |
+| `refactor` | Code refactoring without adding features or fixing bugs        |
+| `perf`     | Performance improvement                                        |
+| `test`     | Adding or updating tests                                       |
+| `build`    | Changes affecting the build system or dependencies             |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Examples
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Feature**: `feat(auth): add user registration flow`
+- **Bug Fix**: `fix(ui): resolve button alignment issue on mobile`
+- **Chore**: `chore(deps): update eslint to latest version`
+- **Documentation**: `docs(readme): update setup instructions`
+
+### Additional Rules
+
+- Keep the **subject line** to 50 characters or fewer.
+- Use the **imperative mood** in the subject line (e.g., "add" not "adding").
+- Capitalize the **type** and **scope** consistently (prefer lowercase).
+- Avoid ending the **subject line** with a period.
+
+By following these guidelines, the commit history will be clear, organized, and easy to understand.
+
+### Examples
+
+```bash
+# Example commands for committing
+git commit -m "feat(auth): add user registration flow"
+git commit -m "fix(ui): resolve button alignment issue on mobile"
+git commit -m "chore(deps): update eslint to latest version"
+git commit -m "docs(readme): update setup instructions"
+```
