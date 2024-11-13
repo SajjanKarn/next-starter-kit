@@ -46,14 +46,5 @@
   },
   "resolutions": {
     "strip-ansi": "6.0.1"
-  },
-  "lint-staged": {
-    "src/**/*.{html,css}": [
-      "prettier --write"
-    ],
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
   }
 }
