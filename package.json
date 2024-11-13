@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier src/ --write"
+    "format": "prettier src/ --write",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.2",
@@ -34,11 +35,25 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-check-file": "^2.8.0",
     "eslint-plugin-n": "^17.13.1",
+    "husky": "^9.1.6",
     "jiti": "2.4.0",
+    "lint-staged": "^15.2.10",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "resolutions": {
+    "strip-ansi": "6.0.1"
+  },
+  "lint-staged": {
+    "src/**/*.{html,css}": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }

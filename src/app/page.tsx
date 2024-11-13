@@ -3,6 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { env } from "@/env/client";
 
+const hello = "world" + "!";
+console.log(hello);
+
 const HomePage = () => {
   return (
     <div className="flex h-[60vh] flex-col items-center justify-center gap-3 bg-gray-50 text-center dark:bg-gray-950">
