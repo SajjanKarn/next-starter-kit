@@ -20,6 +20,9 @@
       "error",
       {
         "src/**": "KEBAB_CASE"
+      },
+      {
+        "ignorePatterns": ["**/_*"] // Allows folders starting with an underscore to use snake_case
       }
     ]
   }
