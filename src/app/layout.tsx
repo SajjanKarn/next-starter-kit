@@ -1,3 +1,4 @@
+import { ScreenIndicator } from "@/components/screen-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import "./globals.css";
@@ -25,6 +26,8 @@ export default function RootLayout({
         >
           <Navbar />
           <main> {children}</main>
+
+          <ScreenIndicator />
         </ThemeProvider>
       </body>
     </html>
