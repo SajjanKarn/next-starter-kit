@@ -1,3 +1,5 @@
+import { ThemeProvider } from "@/components/theme-provider";
+
 import "./globals.css";
 import Navbar from "./navbar";
 
@@ -7,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="icon"
@@ -15,8 +17,15 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Navbar />
-        <main>{children}</main>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <main> {children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );

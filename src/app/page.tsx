@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const HomePage = () => {
   return (
-    <div className="flex h-[60vh] flex-col items-center justify-center gap-3 bg-gray-50 text-center">
+    <div className="flex h-[60vh] flex-col items-center justify-center gap-3 bg-gray-50 text-center dark:bg-gray-950">
       <h1 className="text-4xl font-bold">
         This is a Next.js + TypeScript Starter Kit
       </h1>
