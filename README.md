@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS + TypeScript Starter and Boilerplate
+# Next.js + Tailwind CSS + TypeScript + EsLint + Prettier + Husky + Lint-Staged + CommitLint Starter and Boilerplate
 
 A Next.js starter project configured with TypeScript, Tailwind CSS, and a suite of development tools and configurations to ensure a smooth and maintainable development workflow.
 
